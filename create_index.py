@@ -2,7 +2,6 @@
 # using kerchunk
 
 import json
-from urllib.request import URLopener
 import fsspec
 import kerchunk.hdf
 

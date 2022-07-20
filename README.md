@@ -61,8 +61,7 @@ Note that, although HTTP Toolkit provides a bash script for setting the right en
 For example:
 ```python
 with fsspec.open(URL, "rb", proxy="http://127.0.0.1:8000", ssl=False) as f:
-    h5chunks = kerchunk.hdf.SingleHdf5ToZarr(f, URL, inline_threshold=100)
-    print(json.dumps(h5chunks.translate()))
+    ...
 ```
 `http://127.0.0.1:8000` is the default URL for the HTTP Toolkit proxy server.
 

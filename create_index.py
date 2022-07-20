@@ -17,7 +17,7 @@ URL = "https://cmip6-zarr-o.s3-ext.jc.rl.ac.uk/A-NC-CMIP6.CMIP.MOHC.HadGEM3-GC31
 #
 # If you want to use an HTTP(S) proxy server like HTTP Toolkit,
 # open the file like this:
-#with fsspec.open(URL, "rb", proxy="http://127.0.0.1:8000", ssl=False) as f:
+#with fsspec.open(URL, proxy="http://127.0.0.1:8000", ssl=False) as f:
 
 with fsspec.open(FILENAME) as f:
     h5chunks = kerchunk.hdf.SingleHdf5ToZarr(f, URL, inline_threshold=100)

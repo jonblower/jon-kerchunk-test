@@ -60,7 +60,7 @@ Note that, although HTTP Toolkit provides a bash script for setting the right en
 
 For example:
 ```python
-with fsspec.open(URL, "rb", proxy="http://127.0.0.1:8000", ssl=False) as f:
+with fsspec.open(URL, proxy="http://127.0.0.1:8000", ssl=False) as f:
     ...
 ```
 `http://127.0.0.1:8000` is the default URL for the HTTP Toolkit proxy server.
